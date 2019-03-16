@@ -8,7 +8,7 @@ subtitle:
 description:
 keywords:
 author: wanyifan
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -81,3 +81,20 @@ deploy:
   type: git
   repo: https://github.com/shuisuinian/shuisuinian.github.io.git
   banch: master
+
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+plugins: hexo-generate-feed
+
+live2d:
+  enable: true
+  scriptFrom: local
+  model:
+    use: live2d-widget-model-z16
+  display:
+    position: right
+    width: 80
+    height: 160
+  mobile:
+    show: false
