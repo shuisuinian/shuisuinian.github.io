@@ -144,4 +144,8 @@
   {% include '_third-party/chatra.swig' %}
   {% include '_third-party/tidio.swig' %}
 </body>
+
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
 </html>
