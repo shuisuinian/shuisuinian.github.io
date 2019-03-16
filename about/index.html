@@ -18,9 +18,11 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <script type="text/javascript" src="/js/love.js"></script>
   <!-- 爆炸红心效果 -->
-  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+  <!-- 
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
   <script type="text/javascript" src="/js/firework.js"></script>
+   -->
   <!-- 爆炸红心效果 -->
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -174,11 +176,12 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
+<!-- 音乐播放 -->
   <link rel="stylesheet" href="/dist/APlayer.min.css">
   <div id="aplayer"></div>
   <script type="text/javascript" src="/dist/APlayer.min.js"></script>
   <script type="text/javascript" src="/dist/music.js"></script>
-
+<!-- 动态背景 -->
   
   <script type="text/javascript" color="0,0,0" opacity="0.6" zindex="-2" count="120" src="/js/src/dynamic_background_PC.js"></script>
   
@@ -262,6 +265,23 @@
         
         
           
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
 
     
@@ -339,6 +359,9 @@
             
 
     
+    
+      
+      
     
       
       
@@ -461,6 +484,10 @@
                 <div class="site-state-item site-state-categories">
                   
                     
+                      <a href="/categories/">
+                    
+                  
+                    
                     
                       
                     
@@ -468,7 +495,7 @@
                     
                     <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -515,6 +542,20 @@
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                推荐阅读Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.alloyteam.com/nav/" title="http://www.alloyteam.com/nav/" rel="noopener" target="_blank">Web前端导航</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
