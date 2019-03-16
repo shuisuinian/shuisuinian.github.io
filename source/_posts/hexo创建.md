@@ -2,13 +2,15 @@ title: hexo创建
 tags:
   - hexo博客
 categories:
-  - Hello World
+  - hexo
 date: 2019-03-09 09:01:00
 ---
 ## hexo 静态博客 
 #### 1、 安装node.js
 管理员身份进入cmd
 首先验证是否安装成功 
+*****
+<!-- more -->
 ```
 node -v
 npm -v
