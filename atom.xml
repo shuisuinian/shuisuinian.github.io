@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-03-09T00:26:18.203Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>wanyifan</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/03/16/hello-world/"/>
+    <id>http://yoursite.com/2019/03/16/hello-world/</id>
+    <published>2019-03-16T04:59:44.155Z</published>
+    <updated>2019-03-09T00:26:18.203Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+      <category term="Hello World" scheme="http://yoursite.com/categories/Hello-World/"/>
+    
+    
+      <category term="Hello World" scheme="http://yoursite.com/tags/Hello-World/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单例设计模式</title>
+    <link href="http://yoursite.com/2019/03/10/%E5%8D%95%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/03/10/单例设计模式/</id>
+    <published>2019-03-09T16:12:11.000Z</published>
+    <updated>2019-03-10T02:12:50.493Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="单例设计模式"><a href="#单例设计模式" class="headerlink" title="单例设计模式"></a>单例设计模式</h4><p>必须对于多个程序使用同一个配置信息对象时，就需要保证该对象的唯一性。</p><hr><p> 1.如何保证对象的唯一性</p><ul><li>不允许该类创建一个本类实例</li><li>对该类创建一个本类实例</li><li><p>对外提供一个方法让其他程序可以获取该对象</p><p>2.步骤：</p><ul><li>私有化该类构造函数</li><li>通过new在本类中创建一个本类对象</li><li>定义一个公有的方法，将创建的对象返回</li></ul><hr></li></ul><p>3.例如：新建一个测试类<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Test&#123;</span><br><span class="line">    private int num;</span><br><span class="line">    </span><br><span class="line">    private static Test t = new Test();   //通过new在本类中创建一个本类对象</span><br><span class="line">    private Test()&#123;&#125;                                 //私有化构造函数</span><br><span class="line">    public static Test getInstance()&#123;     //定义一个公有的方法，将创建的对象返回</span><br><span class="line">        return t;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public void setNum(int num)&#123;</span><br><span class="line">        this.num = num;</span><br><span class="line">    &#125;</span><br><span class="line">    public int getNum()&#123;</span><br><span class="line">        return num;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>如果在main中直接new两个对象</p><ul><li><p>方式1</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Demo&#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        Test t1 = new Test();</span><br><span class="line">        Test t2 = new Test();</span><br><span class="line">        t1.setNum(10);</span><br><span class="line">        t2.setNum(20);</span><br><span class="line">        System.out.println(t1.getNum());</span><br><span class="line">        System.out.println(t2.getNum());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>输出结果为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">20</span><br></pre></td></tr></table></figure><p>未达到内存中只有一个对象的要求</p><ul><li>方式2<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Demo&#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        Test t1 = Test.getInstance();</span><br><span class="line">        Test t2 = Test.getInstance();</span><br><span class="line">        t1.setNum(10);</span><br><span class="line">        t2.setNum(20);</span><br><span class="line">        System.out.println(t1.getNum());</span><br><span class="line">        System.out.println(t2.getNum());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p>输出结果为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">20</span><br><span class="line">20</span><br></pre></td></tr></table></figure><p>利用此方法t1 t2操作的时同一个对象吗，所以满足内存了中只有一个对象的要求</p><hr></li></ul><p>4.饿汉式 （开发时常用）<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> class Single &#123; // 类一加载，对象就已经存在了</span><br><span class="line"> </span><br><span class="line">    private Static Single s = new Single();</span><br><span class="line">    </span><br><span class="line">    private Single()&#123;&#125;</span><br><span class="line">    </span><br><span class="line">    public static Single getInstance()&#123;</span><br><span class="line">        return s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>5.懒汉式 (面试时较前者更常问)<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> class Single2 &#123; // 类加载进来，没有对象，只有调用了getInstance方法时，才会创建对象</span><br><span class="line"> //延迟加载形式</span><br><span class="line"> </span><br><span class="line">    private Static Single2 s = null;</span><br><span class="line">    </span><br><span class="line">    private Single2()&#123;&#125;</span><br><span class="line">    </span><br><span class="line">    public static Single2 getInstance()&#123;</span><br><span class="line">        if(s==null)</span><br><span class="line">            s = new Single2();</span><br><span class="line">        return s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;单例设计模式&quot;&gt;&lt;a href=&quot;#单例设计模式&quot; class=&quot;headerlink&quot; title=&quot;单例设计模式&quot;&gt;&lt;/a&gt;单例设计模式&lt;/h4&gt;&lt;p&gt;必须对于多个程序使用同一个配置信息对象时，就需要保证该对象的唯一性。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt; 1.如何保证
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="javase" scheme="http://yoursite.com/tags/javase/"/>
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo创建</title>
+    <link href="http://yoursite.com/2019/03/09/hexo%E5%88%9B%E5%BB%BA/"/>
+    <id>http://yoursite.com/2019/03/09/hexo创建/</id>
+    <published>2019-03-09T01:01:00.000Z</published>
+    <updated>2019-03-09T01:27:26.812Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="hexo-静态博客"><a href="#hexo-静态博客" class="headerlink" title="hexo 静态博客"></a>hexo 静态博客</h2><h4 id="1、-安装node-js"><a href="#1、-安装node-js" class="headerlink" title="1、 安装node.js"></a>1、 安装node.js</h4><p>管理员身份进入cmd<br>首先验证是否安装成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></p><h4 id="2、更换源（改为淘宝源）"><a href="#2、更换源（改为淘宝源）" class="headerlink" title="2、更换源（改为淘宝源）"></a>2、更换源（改为淘宝源）</h4><p> <code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code>键入命令后回车<br><code>cnpm -v</code>  进行验证</p><h4 id="3、使用cnpm-来安装hexo博客框架"><a href="#3、使用cnpm-来安装hexo博客框架" class="headerlink" title="3、使用cnpm 来安装hexo博客框架"></a>3、使用cnpm 来安装hexo博客框架</h4><p><code>cnpm install -g hexo-cli</code><br><code>hexo -v</code>   进行验证</p><h4 id="4、新建文件夹blog进入该文件夹，再执行命令"><a href="#4、新建文件夹blog进入该文件夹，再执行命令" class="headerlink" title="4、新建文件夹blog进入该文件夹，再执行命令"></a>4、新建文件夹blog进入该文件夹，再执行命令</h4><p><code>mkdir blog</code><br><code>cd blog</code><br><code>hexo init</code><br>等待一段时间安装 出现<code>Start blogging with Hwxo!</code>表示安装成功</p><h4 id="5、启动博客"><a href="#5、启动博客" class="headerlink" title="5、启动博客"></a>5、启动博客</h4><p><code>hexo s</code><br>浏览器进入 <code>localhost:4000</code> 发现有一个默认创建的文章</p><h4 id="6、新建博文"><a href="#6、新建博文" class="headerlink" title="6、新建博文"></a>6、新建博文</h4><p><code>hexo n &quot;我的第一篇hexo文章”</code></p><h4 id="7、部署到github上"><a href="#7、部署到github上" class="headerlink" title="7、部署到github上"></a>7、部署到github上</h4><p>在github里新建一个repostory命名  ！！！！<br>你的用户名.github.io</p><h4 id="8、安装插件"><a href="#8、安装插件" class="headerlink" title="8、安装插件"></a>8、安装插件</h4><p>还是在管理员下 cmd 进入blog目录下<br><code>cnpm install --save hexo-deployer-git</code><br> 安装时有个 peerDependencies WARNING  不用管<br> 设置_config.yml 文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> # Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line"> type: git</span><br><span class="line"> repo: https://github.com/shuisuinian/shuisuinian.github.io.git</span><br><span class="line"> banch: maste</span><br></pre></td></tr></table></figure><p> 推送到github   <code>hexo d</code></p><h4 id="9、更换主题"><a href="#9、更换主题" class="headerlink" title="9、更换主题"></a>9、更换主题</h4><p>  <code>git clone https://github.com/litten/hexo-theme-yilia.git. themes/yilia</code><br>  修改 之前的_config.yml<br>  找到  theme 这行 修改为<code>theme: yilia</code><br>  执行以下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p><h4 id="10、排除错误"><a href="#10、排除错误" class="headerlink" title="10、排除错误"></a>10、排除错误</h4><p>缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br>cnpm i hexo-generator-json-content –save<br>3、在根目录_config.yml里添加配置：  jsonContent:<br>    meta: false<br>    pages: false<br>    posts:<br>      title: true<br>      date: true<br>      path: true<br>      text: false<br>      raw: false<br>      content: false<br>      slug: false<br>      updated: false<br>      comments: false<br>      link: false<br>      permalink: false<br>      excerpt: false<br>      categories: false<br>      tags: true</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;hexo-静态博客&quot;&gt;&lt;a href=&quot;#hexo-静态博客&quot; class=&quot;headerlink&quot; title=&quot;hexo 静态博客&quot;&gt;&lt;/a&gt;hexo 静态博客&lt;/h2&gt;&lt;h4 id=&quot;1、-安装node-js&quot;&gt;&lt;a href=&quot;#1、-安装node-js&quot;
+      
+    
+    </summary>
+    
+      <category term="Hello World" scheme="http://yoursite.com/categories/Hello-World/"/>
+    
+    
+      <category term="hexo博客" scheme="http://yoursite.com/tags/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
