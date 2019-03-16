@@ -32,6 +32,8 @@
 
 
 
+
+
   
   
     
@@ -470,11 +472,19 @@
                   
                 
               
-              目前共计 4 个标签
+                
+                  
+                
+              
+                
+                  
+                
+              
+              目前共计 6 个标签
             </div>
             <div class="tag-cloud-tags">
               
-                <a href="/tags/Hello-World/" style="font-size: 12px; color: #ccc">Hello World</a> <a href="/tags/hexo博客/" style="font-size: 30px; color: #111">hexo博客</a> <a href="/tags/javase/" style="font-size: 12px; color: #ccc">javase</a> <a href="/tags/设计模式/" style="font-size: 12px; color: #ccc">设计模式</a>
+                <a href="/tags/Hello-World/" style="font-size: 12px; color: #ccc">Hello World</a> <a href="/tags/hexo博客/" style="font-size: 30px; color: #111">hexo博客</a> <a href="/tags/javase/" style="font-size: 12px; color: #ccc">javase</a> <a href="/tags/oracle/" style="font-size: 12px; color: #ccc">oracle</a> <a href="/tags/数据库/" style="font-size: 12px; color: #ccc">数据库</a> <a href="/tags/设计模式/" style="font-size: 12px; color: #ccc">设计模式</a>
               
             </div>
           </div>
@@ -496,6 +506,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -537,7 +551,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -560,7 +574,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -585,7 +601,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -791,6 +811,36 @@
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'AclYfPTg4XhN9zAlV9kycPPh-gzGzoHsz',
+    appKey: 'LDq1bd1OUDV6aYBY5E9IHc10',
+    placeholder: '各位道友，请举手发言',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
 
 
   
@@ -1184,5 +1234,9 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":80,"height":160},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":80,"height":220},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
 </html>

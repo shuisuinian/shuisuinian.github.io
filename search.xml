@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[oracle10g在win7下的安装]]></title>
+    <url>%2F2019%2F03%2F16%2Foracle10g%E5%9C%A8win7%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[oracle10g在win7x64下的安装 最近学oracle数据库，教的是10g版的，先试着安装 下载合适的版本，官网上10g版本现在是找不到下载的，大家可以自行百度（这里给些链接） http://download.oracle.com/otn/nt/oracle10g/10201/102010_win64_x64_database.zip 如果是win7 64位,可能上面的版本还是无法安装，需要下载下面的这个版本: http://download.oracle.com/otn/nt/oracle10g/10204/10204_vista_w2k8_x64_production_db.zip 下载之后，如果直接安装还是会出问题的，所以在安装之前需要修改一些文件 解压安装包，进入安装包目录 进入 安装包/database/install/ 路径下 修改oraparam.ini文件，找到 Windows=5.0,5.1,5.2,6.0修改如下： 12CERTIFIED_VERSION_FAILURE_MESSAGEWindows=5.0,5.1,5.2,6.0,6.1 在安装包搜索 refhost.xml 文件，搜索到两个文件，都需要修改，如下: 1234567&lt;!--Microsoft Windows Vista--&gt;&lt;OPERATING_SYSTEM&gt; &lt;VERSION VALUE=&quot;6.0&quot;/&gt;&lt;/OPERATING_SYSTEM&gt;&lt;OPERATING_SYSTEM&gt; &lt;VERSION VALUE=&quot;6.1&quot;/&gt;&lt;/OPERATING_SYSTEM&gt; 说明：6.1表示windows的内核版本，Windows 7的内核版本号为6.1 修改完成后 ，再去安装基本不会出问题。不过我安装的时候，报错：启动 Database Control 时出错，导致OracleDBConsoleorcl（数据库控制台服务）没有开启，使用时发现OEM无法使用，只能用iSQLplus和SQLplus工具以前安装12c的时候按照网上教程倒没有什么问题，不知道哪里还需要修改的。emmm…先这样吧。。]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>oracle</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo+Next主题]]></title>
     <url>%2F2019%2F03%2F16%2Fhexo%E7%BE%8E%E5%8C%96%2F</url>
     <content type="text"><![CDATA[安装next主题1git clone https://github.com/theme-next/hexo-theme-next themes/next 启用主题修改博客根目录下的配置文件_config.yml:1234# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: next 主题设定修改Next目录下的配置文件_config.yml:搜索字段：Scheme 可找到以下内容： Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白 Mist - Muse 的紧凑版本，整洁有序的单栏外观 Pisces - 双栏 Scheme，小家碧玉似的清新 Gemini - 左侧网站信息及目录，块+片段结构布局 Scheme 的切换通过更改 主题配置文件，搜索 scheme 关键字。 你会看到有四行 scheme 的配置，将你需用启用的 scheme 前面注释 # 去除即可。]]></content>
