@@ -18,9 +18,11 @@
 <head>
   <script type="text/javascript" src="/js/love.js"></script>
   <!-- 爆炸红心效果 -->
+  <!-- 
   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
   <script type="text/javascript" src="/js/firework.js"></script>
+   -->
   <!-- 爆炸红心效果 -->
   {{ partial('_partials/head/head.swig', {}, {cache: theme.cache.enable}) }}
   {% include '_partials/head/head-unique.swig' %}
@@ -32,11 +34,12 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
 
+<!-- 音乐播放 -->
   <link rel="stylesheet" href="/dist/APlayer.min.css">
   <div id="aplayer"></div>
   <script type="text/javascript" src="/dist/APlayer.min.js"></script>
   <script type="text/javascript" src="/dist/music.js"></script>
-
+<!-- 动态背景 -->
   {% if theme.canvas_nest %}
   <script type="text/javascript" color="0,0,0" opacity='0.6' zIndex="-2" count="120" src="/js/src/dynamic_background_PC.js"></script>
   {% endif %}

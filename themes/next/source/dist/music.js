@@ -1,7 +1,7 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
-    autoplay: true,
+    autoplay: false,
     // http://www.ytmp3.cn/down/51156.mp3url: "http://m10.music.126.net/20190316160109/9d65ace8467d3bba6378e25dcdcf13f6/ymusic/0a85/8d5c/fc3c/2dabfe494a2fbfb7a91908f022b32f27.mp3"
     audio: [
       {

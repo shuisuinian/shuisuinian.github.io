@@ -153,7 +153,7 @@ exturl: false
 menu:
   home: / || home
   tags: /tags/ || tags
-  #categories: /categories/ || th
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -208,12 +208,13 @@ social_icons:
   icons_only: false
   transition: false
 
-# Blog rolls
+# Blog rolls 推荐阅读
 links_icon: link
-links_title: Links
-links_layout: block
+links_title: 推荐阅读Links
+#links_layout: block
 #links_layout: inline
 links:
+  #Web前端导航: http://www.alloyteam.com/nav/
   #Title: http://example.com
 
 # Sidebar Avatar
@@ -951,7 +952,8 @@ lazyload: false
 
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
-pace: false
+# 顶部加载条
+pace: true
 # Themes list:
 # pace-theme-big-counter | pace-theme-bounce | pace-theme-barber-shop | pace-theme-center-atom
 # pace-theme-center-circle | pace-theme-center-radar | pace-theme-center-simple | pace-theme-corner-indicator
