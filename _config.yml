@@ -79,13 +79,15 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/shuisuinian/shuisuinian.github.io.git
-  banch: master
-
+  repo: 
+    github: https://github.com/shuisuinian/shuisuinian.github.io.git,master
+    coding: git@git.coding.net:shuisuinian/shuisuinian.git,master
+# banch: master
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 plugins: hexo-generate-feed
+
 
 live2d:
   enable: true
@@ -95,9 +97,10 @@ live2d:
   display:
     position: right
     width: 80
-    height: 220
+    height: 150
   mobile:
     show: false
+
 # 搜索
 search:
   path: search.xml
