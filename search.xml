@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[oracle10g在win7下的安装]]></title>
-    <url>%2F2019%2F03%2F16%2Foracle10g%E5%9C%A8win7%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%2F</url>
+    <url>%2Foracle10g%E5%9C%A8win7%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85.html</url>
     <content type="text"><![CDATA[oracle10g在win7x64下的安装 最近学oracle数据库，教的是10g版的，先试着安装 下载合适的版本，官网上10g版本现在是找不到下载的，大家可以自行百度（这里给些链接） http://download.oracle.com/otn/nt/oracle10g/10201/102010_win64_x64_database.zip 如果是win7 64位,可能上面的版本还是无法安装，需要下载下面的这个版本: http://download.oracle.com/otn/nt/oracle10g/10204/10204_vista_w2k8_x64_production_db.zip 下载之后，如果直接安装还是会出问题的，所以在安装之前需要修改一些文件 解压安装包，进入安装包目录 进入 安装包/database/install/ 路径下 修改oraparam.ini文件，找到 Windows=5.0,5.1,5.2,6.0修改如下： 12CERTIFIED_VERSION_FAILURE_MESSAGEWindows=5.0,5.1,5.2,6.0,6.1 在安装包搜索 refhost.xml 文件，搜索到两个文件，都需要修改，如下: 1234567&lt;!--Microsoft Windows Vista--&gt;&lt;OPERATING_SYSTEM&gt; &lt;VERSION VALUE=&quot;6.0&quot;/&gt;&lt;/OPERATING_SYSTEM&gt;&lt;OPERATING_SYSTEM&gt; &lt;VERSION VALUE=&quot;6.1&quot;/&gt;&lt;/OPERATING_SYSTEM&gt; 说明：6.1表示windows的内核版本，Windows 7的内核版本号为6.1 修改完成后 ，再去安装基本不会出问题。不过我安装的时候，报错：启动 Database Control 时出错，导致OracleDBConsoleorcl（数据库控制台服务）没有开启，使用时发现OEM无法使用，只能用iSQLplus和SQLplus工具以前安装12c的时候按照网上教程倒没有什么问题，不知道哪里还需要修改的。emmm…先这样吧。。]]></content>
       <categories>
         <category>数据库</category>
@@ -14,7 +14,7 @@
   </entry>
   <entry>
     <title><![CDATA[hexo+Next主题]]></title>
-    <url>%2F2019%2F03%2F16%2Fhexo%E7%BE%8E%E5%8C%96%2F</url>
+    <url>%2Fhexo%E7%BE%8E%E5%8C%96.html</url>
     <content type="text"><![CDATA[安装next主题1git clone https://github.com/theme-next/hexo-theme-next themes/next 启用主题修改博客根目录下的配置文件_config.yml:1234# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: next 主题设定修改Next目录下的配置文件_config.yml:搜索字段：Scheme 可找到以下内容： Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白 Mist - Muse 的紧凑版本，整洁有序的单栏外观 Pisces - 双栏 Scheme，小家碧玉似的清新 Gemini - 左侧网站信息及目录，块+片段结构布局 Scheme 的切换通过更改 主题配置文件，搜索 scheme 关键字。 你会看到有四行 scheme 的配置，将你需用启用的 scheme 前面注释 # 去除即可。]]></content>
       <categories>
         <category>hexo</category>
@@ -25,7 +25,7 @@
   </entry>
   <entry>
     <title><![CDATA[进阶管理hexo博客]]></title>
-    <url>%2F2019%2F03%2F16%2F%E8%BF%9B%E9%98%B6%E7%AE%A1%E7%90%86hexo%E5%8D%9A%E5%AE%A2%2F</url>
+    <url>%2F%E8%BF%9B%E9%98%B6%E7%AE%A1%E7%90%86hexo%E5%8D%9A%E5%AE%A2.html</url>
     <content type="text"><![CDATA[进阶管理hexo博客这几天，重新安装windows系统，好多东西都要重新来过，太麻烦了，所以网上查找了一些解决方案并记录下来 解决方案： 在你的github上新建一个repository，然后把你的blog文件夹上传，进行备份，这个比较简单 在现有的shuisuinian.guthub.io的repository下创建一个分支来管理，具体操作步骤如下： 具体操作： 按本地磁盘（任意位置下，右键打开Git bash,将你的项目文件克隆到本地： 1git clone git@github.com:shuisuinian/shuisuinian.github.io.git 这时该目录下出现一个shuisuinian.github.io的文件夹，进入该文件夹，删除文件夹中除了.git的其他所有文件夹 把你的blog文件夹内的所有文件全部复制到shuisuinian.github.io/下 此时，应有一个名.gitignore的文件，如果没有则自己创建，内容如下：1234567.DS_StoreThumbs.dbdb.json*.lognode_modules/public/.deploy*/ 说明：.gitignore文件就是为了指定哪些文件上传的时候可以忽略，因为blog/的文件并不全部都需要 用git命令创建一个叫hexo（任意命名）的分支，并切换到此分支： 1git checkout -b hexo 以此输入以下命令 123git add --allgit commit -m &quot;注释&quot;git push --set-upstream origin hexo 后续：发表更新博客及源文件 git 提交三部曲 1234567// 更新源文件git add . #添加所有文件到暂存区git commit -m &quot;提交一篇博客&quot; #提交git push origin hexo 推送hexo分支到github// 更新博客hexo ghexo d 利用hexo把本地文章部署到了网站上，网站更新==shuisuinian.github.io下的master分支更新==blog/public/下文件更新，然后通过git三部曲把本地变更过的blog文件也备份到了shuisuinian.github.io下的hexo分支 今后换电脑或者重装系统后，安装基本软件环境后，cnpm安装依赖1git clone -b hexo git@github.com:shuisuinian/shuisuinian.github.io.git]]></content>
       <categories>
         <category>hexo</category>
@@ -36,7 +36,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F03%2F16%2Fhello-world%2F</url>
+    <url>%2Fhello-world.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <categories>
         <category>Hello World</category>
@@ -47,7 +47,7 @@
   </entry>
   <entry>
     <title><![CDATA[单例设计模式]]></title>
-    <url>%2F2019%2F03%2F10%2F%E5%8D%95%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F</url>
+    <url>%2F%E5%8D%95%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</url>
     <content type="text"><![CDATA[单例设计模式必须对于多个程序使用同一个配置信息对象时，就需要保证该对象的唯一性。 1.如何保证对象的唯一性 不允许该类创建一个本类实例 对该类创建一个本类实例 对外提供一个方法让其他程序可以获取该对象 2.步骤： 私有化该类构造函数 通过new在本类中创建一个本类对象 定义一个公有的方法，将创建的对象返回 3.例如：新建一个测试类 1234567891011121314151617class Test&#123; private int num; private static Test t = new Test(); //通过new在本类中创建一个本类对象 private Test()&#123;&#125; //私有化构造函数 public static Test getInstance()&#123; //定义一个公有的方法，将创建的对象返回 return t; &#125; public void setNum(int num)&#123; this.num = num; &#125; public int getNum()&#123; return num; &#125; &#125; 如果在main中直接new两个对象 方式1 12345678910class Demo&#123; public static void main(String[] args)&#123; Test t1 = new Test(); Test t2 = new Test(); t1.setNum(10); t2.setNum(20); System.out.println(t1.getNum()); System.out.println(t2.getNum()); &#125;&#125; 输出结果为 121020 未达到内存中只有一个对象的要求 方式212345678910class Demo&#123; public static void main(String[] args)&#123; Test t1 = Test.getInstance(); Test t2 = Test.getInstance(); t1.setNum(10); t2.setNum(20); System.out.println(t1.getNum()); System.out.println(t2.getNum()); &#125;&#125; 输出结果为 122020 利用此方法t1 t2操作的时同一个对象吗，所以满足内存了中只有一个对象的要求 4.饿汉式 （开发时常用） 12345678910 class Single &#123; // 类一加载，对象就已经存在了 private Static Single s = new Single(); private Single()&#123;&#125; public static Single getInstance()&#123; return s; &#125;&#125; 5.懒汉式 (面试时较前者更常问) 12345678910111213 class Single2 &#123; // 类加载进来，没有对象，只有调用了getInstance方法时，才会创建对象 //延迟加载形式 private Static Single2 s = null; private Single2()&#123;&#125; public static Single2 getInstance()&#123; if(s==null) s = new Single2(); return s; &#125;&#125;]]></content>
       <categories>
         <category>java</category>
@@ -59,7 +59,7 @@
   </entry>
   <entry>
     <title><![CDATA[hexo创建]]></title>
-    <url>%2F2019%2F03%2F09%2Fhexo%E5%88%9B%E5%BB%BA%2F</url>
+    <url>%2Fhexo%E5%88%9B%E5%BB%BA.html</url>
     <content type="text"><![CDATA[hexo 静态博客1、 安装node.js管理员身份进入cmd首先验证是否安装成功 12node -vnpm -v 2、更换源（改为淘宝源） npm install -g cnpm --registry=https://registry.npm.taobao.org键入命令后回车cnpm -v 进行验证 3、使用cnpm 来安装hexo博客框架cnpm install -g hexo-clihexo -v 进行验证 4、新建文件夹blog进入该文件夹，再执行命令mkdir blogcd bloghexo init等待一段时间安装 出现Start blogging with Hwxo!表示安装成功 5、启动博客hexo s浏览器进入 localhost:4000 发现有一个默认创建的文章 6、新建博文hexo n &quot;我的第一篇hexo文章” 7、部署到github上在github里新建一个repostory命名 ！！！！你的用户名.github.io 8、安装插件还是在管理员下 cmd 进入blog目录下cnpm install --save hexo-deployer-git 安装时有个 peerDependencies WARNING 不用管 设置_config.yml 文件 123456 # Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: https://github.com/shuisuinian/shuisuinian.github.io.git banch: maste 推送到github hexo d 9、更换主题 git clone https://github.com/litten/hexo-theme-yilia.git. themes/yilia 修改 之前的_config.yml 找到 theme 这行 修改为theme: yilia 执行以下命令1234hexo cleanhexo ghexo shexo d 10、排除错误缺失模块。1、请确保node版本大于6.22、在博客根目录（注意不是yilia根目录）执行以下命令：cnpm i hexo-generator-json-content –save3、在根目录_config.yml里添加配置： jsonContent: meta: false pages: false posts: title: true date: true path: true text: false raw: false content: false slug: false updated: false comments: false link: false permalink: false excerpt: false categories: false tags: true]]></content>
       <categories>
         <category>hexo</category>
