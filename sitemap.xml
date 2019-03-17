@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://shuisuinian.coding.me/hello-world.html</loc>
+    
+    <lastmod>2019-03-17T23:48:16.420Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://shuisuinian.coding.me/about/index.html</loc>
     
     <lastmod>2019-03-17T02:56:33.439Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://shuisuinian.coding.me/hexo%E7%BE%8E%E5%8C%96.html</loc>
     
     <lastmod>2019-03-16T09:14:46.466Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shuisuinian.coding.me/hello-world.html</loc>
-    
-    <lastmod>2019-03-16T08:14:35.950Z</lastmod>
     
   </url>
   

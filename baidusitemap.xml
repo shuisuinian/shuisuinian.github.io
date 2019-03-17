@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://shuisuinian.coding.me/hello-world.html</loc>
+    <lastmod>2019-03-17</lastmod>
+  </url>  <url>
     <loc>https://shuisuinian.coding.me/oracle10g%E5%9C%A8win7%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85.html</loc>
     <lastmod>2019-03-16</lastmod>
   </url>  <url>
@@ -14,9 +17,6 @@
     <lastmod>2019-03-16</lastmod>
   </url>  <url>
     <loc>https://shuisuinian.coding.me/hexo%E7%BE%8E%E5%8C%96.html</loc>
-    <lastmod>2019-03-16</lastmod>
-  </url>  <url>
-    <loc>https://shuisuinian.coding.me/hello-world.html</loc>
     <lastmod>2019-03-16</lastmod>
   </url>
 </urlset>
