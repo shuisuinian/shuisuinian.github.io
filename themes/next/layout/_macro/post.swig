@@ -337,6 +337,12 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
+    
+    <div>
+      {% if not is_index %}
+        {% include 'passage-end-tag.swig' %}
+      {% endif %}
+    </div>
 
     {% if theme.wechat_subscriber.enable and not is_index %}
       {% include '../_partials/post/wechat-subscriber.swig' %}
@@ -358,6 +364,7 @@
         {% include '../_partials/post/post-copyright.swig' with { post: post } %}
       </div>
     {% endif %}
+
 
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
