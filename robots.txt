@@ -12,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://shuisuinian.coding.me/sitemap.xml
-Sitemap: https://shuisuinian.coding.me/baidusitemap.xml
+Sitemap: http://shuisuinian.coding.me/sitemap.xml
+Sitemap: http://shuisuinian.coding.me/baidusitemap.xml
