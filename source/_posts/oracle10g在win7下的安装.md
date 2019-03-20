@@ -1,11 +1,12 @@
 ---
 title: oracle10g在win7下的安装
-date: 2019-03-16 20:00:31
 tags:
   - 数据库
   - oracle
 categories:
   - 数据库
+abbrlink: 2261899728
+date: 2019-03-16 20:00:31
 ---
 ## oracle10g在win7x64下的安装
 >最近学oracle数据库，教的是10g版的，先试着安装

@@ -29,6 +29,13 @@
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
+  
+  <meta name="baidu-site-verification" content="zUnsFqT0nU" />
+  <meta name="baidu-site-verification" content="3rJfkmobbe" />
+  <meta name="google-site-verification" content="P9Maq1vE6gdziqCsWRBK2k9FtR7iuVKDYoY3cdhQoIw" />
+  
+  
+  <meta name="google-site-verification" content="hUW_rTtDPTYWTNyvfkQzGMNweWre1Ab-shwh3ToNukk" />
 </head>
 
 
@@ -143,6 +150,24 @@
   {% include '_third-party/copy-code.swig' %}
   {% include '_third-party/chatra.swig' %}
   {% include '_third-party/tidio.swig' %}
+
+
+<!--自动推送百度脚本-->
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
 </body>
 
 <!--崩溃欺骗-->

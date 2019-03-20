@@ -4,8 +4,17 @@ tags:
   - Hello World
 categories:
   - Hello World
+abbrlink: 1243066710
 ---
+## 欢迎进入wyf's blog
+Welcome to [wyf-Hexo-coding pages](https://shuisuinian.coding.me/)!
+Welcome to [wyf-Hexo-github pages](https://shuisuinian.github.io/)!
 
+*****
+
+<!-- more -->
+#### 之后是第一次搭建hexo时自动创建
+## hello world
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
 ## Quick Start

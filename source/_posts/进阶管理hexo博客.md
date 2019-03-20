@@ -1,10 +1,11 @@
 ---
 title: 进阶管理hexo博客
-date: 2019-03-16 16:24:05
-tags: 
+tags:
   - hexo博客
 categories:
   - hexo
+abbrlink: 2002852375
+date: 2019-03-16 16:24:05
 ---
 ## 进阶管理hexo博客
 这几天，重新安装windows系统，好多东西都要重新来过，太麻烦了，所以网上查找了一些解决方案并记录下来

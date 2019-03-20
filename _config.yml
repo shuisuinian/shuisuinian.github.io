@@ -4,18 +4,22 @@
 
 # Site
 title: wyf-Hexo
-subtitle: 
-description:
-keywords:
+subtitle:  "wyf's personal blog <br> wyf 的个人博客"
+description: 没什么期待才会偶遇惊喜
+keywords: "wyf's blog , personal blog"
 author: ShuiSui
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://shuisuinian.coding.me/
 root: /
-permalink: :year/:month/:day/:title/
+#permalink: :title.html #:year/:month/:day/:title/
+permalink: archives/:abbrlink.html  # 生成唯一链接
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: dec    # 进制：dec(default) and hex
 permalink_defaults:
 
 # Directory
@@ -109,3 +113,9 @@ search:
   limit: 10000
 
 baidushare: true #百度分享功能
+
+# hexo sitemap网站地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml

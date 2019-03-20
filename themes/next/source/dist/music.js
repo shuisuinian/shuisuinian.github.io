@@ -4,12 +4,7 @@ const ap = new APlayer({
     autoplay: false,
     // http://www.ytmp3.cn/down/51156.mp3url: "http://m10.music.126.net/20190316160109/9d65ace8467d3bba6378e25dcdcf13f6/ymusic/0a85/8d5c/fc3c/2dabfe494a2fbfb7a91908f022b32f27.mp3"
     audio: [
-      {
-        name: "如果当时",
-        artist: '许嵩',
-        url: 'http://m10.music.126.net/20190316160109/9d65ace8467d3bba6378e25dcdcf13f6/ymusic/0a85/8d5c/fc3c/2dabfe494a2fbfb7a91908f022b32f27.mp3',
-        cover: 'https://p2.music.126.net/Md3RLH0fe2a_3dMDnfqoQg==/18590542604286213.jpg?param=130y130',
-      },
+      
       {
         name: "柳成荫",
         artist: '许嵩',
@@ -39,6 +34,12 @@ const ap = new APlayer({
         artist: '陈奕迅',
         url: 'http://www.ytmp3.cn/down/49639.mp3',
         cover: 'http://p1.music.126.net/Bl1hEdJbMSj5YJsTqUjr-w==/109951163520311175.jpg?param=130y130',
+      },
+      {
+        name: "如果当时",
+        artist: '许嵩',
+        url: 'http://m10.music.126.net/20190316160109/9d65ace8467d3bba6378e25dcdcf13f6/ymusic/0a85/8d5c/fc3c/2dabfe494a2fbfb7a91908f022b32f27.mp3',
+        cover: 'https://p2.music.126.net/Md3RLH0fe2a_3dMDnfqoQg==/18590542604286213.jpg?param=130y130',
       }
     ]
 });

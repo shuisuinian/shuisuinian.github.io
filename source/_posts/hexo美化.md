@@ -1,10 +1,11 @@
 ---
 title: hexo+Next主题
-date: 2019-03-16 16:57:35
 tags:
   - hexo博客
 categories:
   - hexo
+abbrlink: 524570569
+date: 2019-03-16 16:57:35
 ---
 #### 安装next主题
 ```
