@@ -1975,7 +1975,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bfade5;
+  background: #8afaff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2275,6 +2275,29 @@ pre .javascript .function {
   top: 50%;
   transform: translate(-50%, -50%);
   color: #ccc;
+}
+#needsharebutton-postbottom {
+  position: relative;
+  cursor: pointer;
+  height: 26px;
+}
+#needsharebutton-postbottom .btn {
+  display: initial;
+  padding: 1px 4px;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+#needsharebutton-float {
+  position: fixed;
+  bottom: 38px;
+  left: -8px;
+  z-index: 9999;
+  cursor: pointer;
+}
+#needsharebutton-float .btn {
+  padding: 0 10px 0 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
 }
 .copy-btn {
   display: inline-block;
@@ -3185,4 +3208,47 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.header-inner {
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+.sidebar-inner {
+  border-radius: 2em;
+}
+.my-post-block {
+  border-radius: 2em;
+}
+.comments {
+  border-radius: 2em;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #0477ab;
+  text-decoration: underline;
+}
+.link-blue {
+  color: #f36;
+}
+.link-blue:hover {
+  color: #f00;
+}
+.posts-expand .post-body img {
+  margin: 0 auto;
+}
+.post-more-link .btn {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 2px;
+  padding: 0 10px;
+  font-weight: bold;
+  background: transparent;
+  transition: all 0.5s ease;
+}
+.post-more-link .btn:hover {
+  background: #000;
+  color: #eee;
 }
