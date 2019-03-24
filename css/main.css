@@ -1975,7 +1975,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8afaff;
+  background: #668b98;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3214,9 +3214,15 @@ ul.breadcrumb li+li:last-child {
   border-bottom-left-radius: 2em;
 }
 .sidebar-inner {
+  margin-top: 1em;
+  margin-bottom: 1em;
   border-radius: 2em;
 }
-.my-post-block {
+#posts > article + article .post-block,
+.post-block {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
   border-radius: 2em;
 }
 .comments {
@@ -3225,10 +3231,12 @@ ul.breadcrumb li+li:last-child {
 .post-body p a {
   color: #0593d3;
   border-bottom: none;
+  border-bottom: 1px solid #0593d3;
 }
 .post-body p a:hover {
-  color: #0477ab;
-  text-decoration: underline;
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
 }
 .link-blue {
   color: #f36;
