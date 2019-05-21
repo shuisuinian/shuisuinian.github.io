@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[什么是HTML]]></title>
+    <url>%2Farchives%2F625187715.html</url>
+    <content type="text"><![CDATA[什么是HTML html是超文本标记语言 html就是用来做网站前端的 偏硬件 汇编语言c语言c++ 偏向应用 java:网站应用系统。数据分析，安卓的appc# 浏览器： ”解释和执行“HTML的工具 html主要有若干个标签组成： html标签分为块状标签和行级标签 块状标签: 独占一行或者前后隔一空行 标题h1 标题h2 标题h3 标题h4 标题h5 标题h6123456&lt;h1&gt;标题h1&lt;/h1&gt;&lt;h2&gt;标题h2&lt;/h2&gt;&lt;h3&gt;标题h3&lt;/h3&gt;&lt;h4&gt;标题h4&lt;/h4&gt;&lt;h5&gt;标题h5&lt;/h5&gt;&lt;h6&gt;标题h6&lt;/h6&gt; 段落标签1&lt;p&gt;段落标签&lt;/p&gt; 水平线标签 1&lt;hr&gt; 段落标签和h标签的区别是：1：h标签字体加粗加大2：p段落标签是网页默认字体 有序列表标签 淘宝 京东1234&lt;ol&gt;&lt;li&gt;淘宝&lt;/li&gt;&lt;li&gt;京东&lt;/li&gt;&lt;/ol&gt; 无序列表标签 淘宝 京东1234&lt;ul&gt;&lt;li&gt;淘宝&lt;/li&gt;&lt;li&gt;京东&lt;/li&gt;&lt;/ul&gt; 商品某某 价格：199 库存：99定义描述标签12345&lt;dl&gt;&lt;dt&gt;商品某某&lt;/dt&gt;&lt;dd&gt;价格：199&lt;/dd&gt;&lt;dd&gt;库存：99&lt;/dd&gt;&lt;/dl&gt; 表格标签12345&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt; 行级标签：不独占一行图像标签：在网页中插入图片1&lt;img src=&quot;../images/b2.jpg&quot; alt=&quot;图片&quot; width=&quot;250&quot; height=&quot;250&quot; title=&quot;ssss&quot;&gt; 12&lt;span&gt;&lt;/span&gt;范围标签&lt;br/&gt;换行标签]]></content>
+      <categories>
+        <category>jee学习之路</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[20190521151204]]></title>
+    <url>%2Farchives%2F2987747778.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[习惯的开始]]></title>
     <url>%2Farchives%2F3717175919.html</url>
     <content type="text"><![CDATA[习惯的开始最近开始在系统的学习jee了，争取每几节课都能给自己做个知识总结，或者说是笔记，备忘吧！试着开始这样的学习希望能坚持一点时间]]></content>
