@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shuisuinian.coding.me/"/>
-  <updated>2019-03-27T02:55:13.833Z</updated>
+  <updated>2019-05-21T06:53:02.284Z</updated>
   <id>https://shuisuinian.coding.me/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20190521144911</title>
+    <link href="https://shuisuinian.coding.me/archives/3717175919.html"/>
+    <id>https://shuisuinian.coding.me/archives/3717175919.html</id>
+    <published>2019-05-21T06:49:11.000Z</published>
+    <updated>2019-05-21T06:53:02.284Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="习惯的开始"><a href="#习惯的开始" class="headerlink" title="习惯的开始"></a>习惯的开始</h4><p>最近开始在系统的学习jee了，争取每几节课都能给自己做个知识总结，或者说是笔记，备忘吧！试着开始这样的学习希望能坚持一点时间</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;习惯的开始&quot;&gt;&lt;a href=&quot;#习惯的开始&quot; class=&quot;headerlink&quot; title=&quot;习惯的开始&quot;&gt;&lt;/a&gt;习惯的开始&lt;/h4&gt;&lt;p&gt;最近开始在系统的学习jee了，争取每几节课都能给自己做个知识总结，或者说是笔记，备忘吧！试着开始这样的学习希望能坚持
+      
+    
+    </summary>
+    
+      <category term="jee学习之路" scheme="https://shuisuinian.coding.me/categories/jee%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+      <category term="html" scheme="https://shuisuinian.coding.me/tags/html/"/>
+    
+  </entry>
   
   <entry>
     <title>oracle10g在win7下的安装</title>
