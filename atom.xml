@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shuisuinian.coding.me/"/>
-  <updated>2019-05-21T12:34:31.426Z</updated>
+  <updated>2019-05-22T11:48:43.342Z</updated>
   <id>https://shuisuinian.coding.me/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS</title>
+    <link href="https://shuisuinian.coding.me/archives/3999917138.html"/>
+    <id>https://shuisuinian.coding.me/archives/3999917138.html</id>
+    <published>2019-05-22T11:47:01.000Z</published>
+    <updated>2019-05-22T11:48:43.342Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><h4 id="css的作用"><a href="#css的作用" class="headerlink" title="css的作用"></a>css的作用</h4><ol><li>美化网页</li><li>设置字体的大小</li><li>设置容器的位置，大小</li><li>设置图片</li></ol><a id="more"></a><h4 id="写css样式的方法"><a href="#写css样式的方法" class="headerlink" title="写css样式的方法"></a>写css样式的方法</h4><ol><li>内部样式<br> 在head标签里面加上 <style type="text/css"></style></li><li>行内样式<br> 在标签里面加上style=””</li><li>外部样式<br> 连接一个专门的css文件</li></ol><h4 id="css基本语法"><a href="#css基本语法" class="headerlink" title="css基本语法"></a>css基本语法</h4><p> 选择器(即要修饰的对象){<br>    css属性1:属性值1;<br>    css属性2:属性值2;<br> }</p><blockquote><p>例如：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p&#123; </span><br><span class="line">    border-radius: 2.5em;    </span><br><span class="line">    background-color: rgba(255, 169, 88, 0.12);    </span><br><span class="line">    text-align: center;    </span><br><span class="line">    font-size: 13px;/*改变字体大小*/    </span><br><span class="line">    color: red;/*改变字体颜色*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></blockquote><h5 id="选择器的分类"><a href="#选择器的分类" class="headerlink" title="选择器的分类"></a>选择器的分类</h5><ol><li>标签选择器</li><li><p>类选择器<br> 给标签取个class名字<br> css用<br> .class名{<br> }</p><blockquote><p>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.li1&#123;    </span><br><span class="line">font-size: 20px;    </span><br><span class="line">color: #000;    </span><br><span class="line">font-family: 华文宋体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></blockquote></li><li><p>id选择器<br> 给标签取个唯一id<br> css用<br> #id{<br> }</p><blockquote><p>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#li1&#123;    </span><br><span class="line">text-decoration: overline;    </span><br><span class="line">font-size: 16px;    </span><br><span class="line">letter-spacing: 15px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></blockquote></li></ol><ol start="4"><li>后代选择器<br> 选择该元素的所有后代,无论第几代</li><li>子代选择器<br> 只选择第一代</li><li>兄弟选择器<br> 查找id=li1的元素后面的<br>所有兄弟元</li><li>相邻兄弟选择器<br> 查找id=li1的元素后面的第一个为li标签的兄弟元<h6 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h6>id&gt;class&gt;子代&gt;后代</li></ol><h4 id="css属性"><a href="#css属性" class="headerlink" title="css属性"></a>css属性</h4><h5 id="文本属性"><a href="#文本属性" class="headerlink" title="文本属性"></a>文本属性</h5><blockquote><p>font-family:字体<br>Font-size:字体大小<br>Font-weight:是否加粗<br>color设置颜色<br>Text-indent:首行缩进<br>text-align：center/left/right对齐<br>Line-height:最主要的作用是设置文字相对容器垂直居中如果line-height等于height，文字就会垂直居中<br>white-space: pre;/<em>保留空白字符</em>/<br>white-space: normal;/<em>忽略空白字符</em>/</p></blockquote><h5 id="背景属性"><a href="#背景属性" class="headerlink" title="背景属性"></a>背景属性</h5><blockquote><p>Background-color:背景颜色<br>Background-image:url(“图片地址”)背景图片<br>Background-repeat:（背景重复方式）<br>repeat（重复，默认）<br>no-repeat(不重复)<br>Repeat-x（x轴上重复）<br>Repeat-y（y轴上重复）<br>Background-positionn: -20px  10px (控制背景图片的位置，将背景图片向左偏移20px，向下偏移10px)</p></blockquote><h5 id="其他属性"><a href="#其他属性" class="headerlink" title="其他属性"></a>其他属性</h5><blockquote><p>text-decoration：（加下划线）<br>underline下划线<br>line-through 删除线<br>overline 上划线<br>none 不需要线<br>letter-spacing:（设置文字之间的间距）数字px;</p></blockquote><blockquote><p>list-style：none；（去掉li前的圆心）<br>square;(改为矩形矩形)<br>circle；（空心圆）<br>disc；（实心圆，默认）</p></blockquote><h4 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h4><p>一个盒子（容器）是由4部分组成的：</p><ol><li>里面的内容（元素内容）</li><li><p>內边距（容器与内容之间的距离）<br> padding设置</p><ul><li>padding-left:</li><li>padding-top:</li><li>padding-right:</li><li>padding-bottom:</li><li>缩写形式1：padding：10px,10px,10px,10px;(上右下左)</li><li>缩写形式2：padding：10px,20px;(上下10，左右20)</li></ul></li><li><p>外边距（容器与外部的距离）<br> margin设置</p><ul><li>margin-left:</li><li>margin-top:</li><li>margin-right:</li><li>margin-bottom:</li><li>缩写形式：margin：10px,10px,10px,10px;(上右下左)</li><li>缩写形式2：margin：10px,20px;(上下10，左右20)</li></ul></li><li>边框（边框线）<br> border设置</li></ol><blockquote><p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;    </span><br><span class="line">    width: 300px;    </span><br><span class="line">    height: 200px;    </span><br><span class="line">    border: 1px solid red;    </span><br><span class="line">    padding-left: 20px;    </span><br><span class="line">    padding-top: 20px;    </span><br><span class="line">    margin-top: 30px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></blockquote><blockquote><p>常用水平居中的方法：（容器相对于外部容器）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;    </span><br><span class="line">    width: 300px;    </span><br><span class="line">    height: 200px;    </span><br><span class="line">    margin: 0px auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></blockquote><blockquote><p>容器的实际宽高=css设置的宽高+边框的大小+padding</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;css&quot;&gt;&lt;a href=&quot;#css&quot; class=&quot;headerlink&quot; title=&quot;css&quot;&gt;&lt;/a&gt;css&lt;/h3&gt;&lt;h4 id=&quot;css的作用&quot;&gt;&lt;a href=&quot;#css的作用&quot; class=&quot;headerlink&quot; title=&quot;css的作用&quot;&gt;&lt;/a&gt;css的作用&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;美化网页&lt;/li&gt;
+&lt;li&gt;设置字体的大小&lt;/li&gt;
+&lt;li&gt;设置容器的位置，大小&lt;/li&gt;
+&lt;li&gt;设置图片&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="jee学习之路" scheme="https://shuisuinian.coding.me/categories/jee%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+      <category term="html" scheme="https://shuisuinian.coding.me/tags/html/"/>
+    
+      <category term="css" scheme="https://shuisuinian.coding.me/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>什么是HTML</title>

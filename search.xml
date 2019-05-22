@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CSS]]></title>
+    <url>%2Farchives%2F3999917138.html</url>
+    <content type="text"><![CDATA[csscss的作用 美化网页 设置字体的大小 设置容器的位置，大小 设置图片 写css样式的方法 内部样式 在head标签里面加上 行内样式 在标签里面加上style=”” 外部样式 连接一个专门的css文件 css基本语法 选择器(即要修饰的对象){ css属性1:属性值1; css属性2:属性值2; } 例如： 1234567p&#123; border-radius: 2.5em; background-color: rgba(255, 169, 88, 0.12); text-align: center; font-size: 13px;/*改变字体大小*/ color: red;/*改变字体颜色*/&#125; 选择器的分类 标签选择器 类选择器 给标签取个class名字 css用 .class名{ } 例如： 12345.li1&#123; font-size: 20px; color: #000; font-family: 华文宋体;&#125; id选择器 给标签取个唯一id css用 #id{ } 例如： 12345#li1&#123; text-decoration: overline; font-size: 16px; letter-spacing: 15px;&#125; 后代选择器 选择该元素的所有后代,无论第几代 子代选择器 只选择第一代 兄弟选择器 查找id=li1的元素后面的所有兄弟元 相邻兄弟选择器 查找id=li1的元素后面的第一个为li标签的兄弟元优先级id&gt;class&gt;子代&gt;后代 css属性文本属性 font-family:字体Font-size:字体大小Font-weight:是否加粗color设置颜色Text-indent:首行缩进text-align：center/left/right对齐Line-height:最主要的作用是设置文字相对容器垂直居中如果line-height等于height，文字就会垂直居中white-space: pre;/保留空白字符/white-space: normal;/忽略空白字符/ 背景属性 Background-color:背景颜色Background-image:url(“图片地址”)背景图片Background-repeat:（背景重复方式）repeat（重复，默认）no-repeat(不重复)Repeat-x（x轴上重复）Repeat-y（y轴上重复）Background-positionn: -20px 10px (控制背景图片的位置，将背景图片向左偏移20px，向下偏移10px) 其他属性 text-decoration：（加下划线）underline下划线line-through 删除线overline 上划线none 不需要线letter-spacing:（设置文字之间的间距）数字px; list-style：none；（去掉li前的圆心）square;(改为矩形矩形)circle；（空心圆）disc；（实心圆，默认） 盒子模型一个盒子（容器）是由4部分组成的： 里面的内容（元素内容） 內边距（容器与内容之间的距离） padding设置 padding-left: padding-top: padding-right: padding-bottom: 缩写形式1：padding：10px,10px,10px,10px;(上右下左) 缩写形式2：padding：10px,20px;(上下10，左右20) 外边距（容器与外部的距离） margin设置 margin-left: margin-top: margin-right: margin-bottom: 缩写形式：margin：10px,10px,10px,10px;(上右下左) 缩写形式2：margin：10px,20px;(上下10，左右20) 边框（边框线） border设置 例：12345678.box&#123; width: 300px; height: 200px; border: 1px solid red; padding-left: 20px; padding-top: 20px; margin-top: 30px;&#125; 常用水平居中的方法：（容器相对于外部容器）12345.box&#123; width: 300px; height: 200px; margin: 0px auto;&#125; 容器的实际宽高=css设置的宽高+边框的大小+padding]]></content>
+      <categories>
+        <category>jee学习之路</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[什么是HTML]]></title>
     <url>%2Farchives%2F625187715.html</url>
     <content type="text"><![CDATA[什么是HTML html是超文本标记语言 html就是用来做网站前端的 偏硬件 汇编语言c语言c++ 偏向应用 java:网站应用系统。数据分析，安卓的appc# 浏览器： ”解释和执行“HTML的工具 html主要有若干个标签组成： html标签分为块状标签和行级标签 块状标签: 独占一行或者前后隔一空行 标题h1 标题h2 标题h3 标题h4 标题h5 标题h6123456&lt;h1&gt;标题h1&lt;/h1&gt;&lt;h2&gt;标题h2&lt;/h2&gt;&lt;h3&gt;标题h3&lt;/h3&gt;&lt;h4&gt;标题h4&lt;/h4&gt;&lt;h5&gt;标题h5&lt;/h5&gt;&lt;h6&gt;标题h6&lt;/h6&gt; 段落标签1&lt;p&gt;段落标签&lt;/p&gt; 水平线标签 1&lt;hr&gt; 段落标签和h标签的区别是：1：h标签字体加粗加大2：p段落标签是网页默认字体 有序列表标签 1234&lt;ol&gt;&lt;li&gt;淘宝&lt;/li&gt;&lt;li&gt;京东&lt;/li&gt;&lt;/ol&gt; 无序列表标签如： 淘宝 京东1234&lt;ul&gt;&lt;li&gt;淘宝&lt;/li&gt;&lt;li&gt;京东&lt;/li&gt;&lt;/ul&gt; 商品某某 价格：199 库存：99定义描述标签12345&lt;dl&gt;&lt;dt&gt;商品某某&lt;/dt&gt;&lt;dd&gt;价格：199&lt;/dd&gt;&lt;dd&gt;库存：99&lt;/dd&gt;&lt;/dl&gt; 表格标签12345&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt; 行级标签：不独占一行图像标签：在网页中插入图片1&lt;img src=&quot;../images/b2.jpg&quot; alt=&quot;图片&quot; width=&quot;250&quot; height=&quot;250&quot; title=&quot;ssss&quot;&gt; 12&lt;span&gt;&lt;/span&gt;范围标签&lt;br/&gt;换行标签]]></content>
