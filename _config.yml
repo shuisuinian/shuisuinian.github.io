@@ -112,7 +112,7 @@ search:
   format: html
   limit: 10000
 
-baidushare: true #百度分享功能
+#baidushare: true #百度分享功能
 
 # hexo sitemap网站地图
 sitemap:

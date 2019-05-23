@@ -1,1 +1,74 @@
 // Custom styles.
+
+// 边框的自定义样式
+
+.header-inner {
+	
+    border-bottom-right-radius:2em;
+    border-bottom-left-radius:2em;
+}
+.sidebar-inner {
+	margin-top: 1em;
+   margin-bottom: 1em;
+    border-radius: 2em;
+}
+
+.post-block{
+   margin-top: 2em;
+   margin-bottom: 2em;
+   padding: 2em;
+   border-radius: 2em;
+  }
+#posts > article + article .post-block{
+   margin-top: 2em;
+   margin-bottom: 2em;
+   padding: 2em;
+   border-radius: 2em;
+  }
+
+.comments {
+    border-radius: 2em;
+}
+
+
+//修改文章内链接文本样式
+
+// 文章内链接文本样式
+.post-body p a{
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+  &:hover {
+    color: #fc6423;
+    border-bottom: none;
+    border-bottom: 1px solid #fc6423;
+  }
+}
+//修改不在文章内的链接文本样式
+.link-blue{
+	color: #f36;
+	&:hover {
+		color: #f00;
+	}
+}
+
+//修改文章中图片样式，改为居中
+.posts-expand .post-body img {
+	margin: 0 auto;
+}
+//阅读全文样式
+.post-more-link .btn {
+	position:relative;
+	border: 2px solid #000;
+	border-radius: 2px;
+	padding: 0 10px;
+	font-weight: bold;
+	background: transparent;
+	transition: all .5s ease;
+	&:hover {
+		background: #000;
+		color: #eee;
+	}
+}
+//
+

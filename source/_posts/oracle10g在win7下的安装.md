@@ -13,7 +13,7 @@ date: 2019-03-16 20:00:31
 
 <!-- more -->
 
-* 下载合适的版本，官网上10g版本现在是找不到下载的，大家可以自行百度（这里给些链接）
+* 下载合适的版本，官网上10g版本现在是找不到下载的，大家可以自行百度（这里给些链接，复制链接到迅雷下载）
 
   [http://download.oracle.com/otn/nt/oracle10g/10201/102010_win64_x64_database.zip](http://download.oracle.com/otn/nt/oracle10g/10201/102010_win64_x64_database.zip) 
   
