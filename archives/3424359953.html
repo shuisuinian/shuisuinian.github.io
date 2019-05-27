@@ -131,7 +131,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/05/27/5cebd5fbd20d942789.png">
 <meta property="og:image" content="https://i.loli.net/2019/05/27/5cebd5fc8adb643338.png">
 <meta property="og:image" content="https://i.loli.net/2019/05/27/5cebd5fbb48f662653.png">
-<meta property="og:updated_time" content="2019-05-27T12:20:29.738Z">
+<meta property="og:updated_time" content="2019-05-27T12:28:47.931Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript">
 <meta name="twitter:description" content="JavaScript什么是JavaScript（js） js是浏览器客户端的一种语言（浏览器是js程序的运行时的环境） js主要的作用就是用来操作html、css 网页中的特效代码都是用js实现的">
@@ -483,7 +483,7 @@
                 
               
 
-              <time title="创建时间：2019-05-27 20:01:01 / 修改时间：20:20:29" itemprop="dateCreated datePublished" datetime="2019-05-27T20:01:01+08:00">2019-05-27</time>
+              <time title="创建时间：2019-05-27 20:01:01 / 修改时间：20:28:47" itemprop="dateCreated datePublished" datetime="2019-05-27T20:01:01+08:00">2019-05-27</time>
             
 
             
@@ -618,8 +618,9 @@
 <li>object 对象类型</li>
 </ol>
 <blockquote>
-<p>typeof() 可以检测变量数据类型<br>以下例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var a;//没有赋值，undefined类型</span><br><span class="line">var b = 12.2;//number类型</span><br><span class="line">var c = &quot;12.2&quot;;//string类型</span><br><span class="line">var is = true;//boolean类型</span><br><span class="line">var n = null;//object类型</span><br><span class="line">document.write(typeof(a));//检测a的数据类型类型</span><br></pre></td></tr></table></figure></p>
+<p>typeof() 可以检测变量数据类型<br>以下例子：</p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var a;//没有赋值，undefined类型</span><br><span class="line">var b = 12.2;//number类型</span><br><span class="line">var c = &quot;12.2&quot;;//string类型</span><br><span class="line">var is = true;//boolean类型</span><br><span class="line">var n = null;//object类型</span><br><span class="line">document.write(typeof(a));//检测a的数据类型类型</span><br></pre></td></tr></table></figure>
 <h3 id="字符串的-双引号问题"><a href="#字符串的-双引号问题" class="headerlink" title="字符串的 双引号问题"></a>字符串的 双引号问题</h3><blockquote>
 <p>在一个双引号字符串之间如果要加入双引号<br>有三种方法：<br>1：不加双引号：没有严重的影响(不推荐)<br>2：用单引号代替<br>3：用转义字符-&gt; \”</p>
 <blockquote>
@@ -629,14 +630,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//用转义字符</span><br><span class="line">var str = &quot;&lt;div style=\&quot;width:&quot;+a+&quot;px\&quot;&gt;&lt;/div&gt;&quot;;</span><br><span class="line">//用单引号代替</span><br><span class="line">var str2 = &quot;&lt;div style=&apos;width:&quot;+a+&quot;px&apos;&gt;&lt;/div&gt;&quot;;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <blockquote>
-<p>例2:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var a = 100;</span><br><span class="line">var str = &quot;&lt;div style=\&quot;&quot;+</span><br><span class="line">        &quot;width:&quot; + a + &quot;px;&quot;+</span><br><span class="line">        &quot;height: 100px;&quot; +</span><br><span class="line">        &quot;border: 1px solid red;&quot;+</span><br><span class="line">        &quot;\&quot;&gt;&lt;/div&gt;&quot;;</span><br><span class="line">document.write(str);</span><br></pre></td></tr></table></figure></p>
+<p>例2:</p>
 </blockquote>
 </blockquote>
-<blockquote>
-<blockquote>
-<p>例2效果：</p>
-</blockquote>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var a = 100;</span><br><span class="line">var str = &quot;&lt;div style=\&quot;&quot;+</span><br><span class="line">        &quot;width:&quot; + a + &quot;px;&quot;+</span><br><span class="line">        &quot;height: 100px;&quot; +</span><br><span class="line">        &quot;border: 1px solid red;&quot;+</span><br><span class="line">        &quot;\&quot;&gt;&lt;/div&gt;&quot;;</span><br><span class="line">document.write(str);</span><br></pre></td></tr></table></figure>
 <h2 id="javascript运算符"><a href="#javascript运算符" class="headerlink" title="javascript运算符"></a>javascript运算符</h2><table>
 <thead>
 <tr>
@@ -695,7 +692,7 @@
 <blockquote>
 <p>例2<br>关于 表达式简写 下面以 + 为例（+ - * / % 用法一样）</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var z = 10;</span><br><span class="line">var n = 1;</span><br><span class="line">n = n + 1;</span><br><span class="line">document.write(&quot;n=&quot;+ n + &quot;,&quot; +&quot;&lt;br/&gt;&quot;);</span><br><span class="line">var n = 1;</span><br><span class="line">n += 1;</span><br><span class="line">document.write(&quot;n=&quot;+ n + &quot;,&quot; +&quot;&lt;br/&gt;&quot;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var n = 1;</span><br><span class="line">n = n + 1;</span><br><span class="line">document.write(&quot;n=&quot;+ n + &quot;,&quot; +&quot;&lt;br/&gt;&quot;);</span><br><span class="line">var n = 1;</span><br><span class="line">n += 1;</span><br><span class="line">document.write(&quot;n=&quot;+ n + &quot;,&quot; +&quot;&lt;br/&gt;&quot;);</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>例2结果：</p>
 </blockquote>
