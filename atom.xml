@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shuisuinian.coding.me/"/>
-  <updated>2019-05-27T12:28:47.931Z</updated>
+  <updated>2019-05-31T10:44:26.551Z</updated>
   <id>https://shuisuinian.coding.me/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript（后续）</title>
+    <link href="https://shuisuinian.coding.me/archives/3972042800.html"/>
+    <id>https://shuisuinian.coding.me/archives/3972042800.html</id>
+    <published>2019-05-31T10:39:55.000Z</published>
+    <updated>2019-05-31T10:44:26.551Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="JavaScript-（后续：1）"><a href="#JavaScript-（后续：1）" class="headerlink" title="JavaScript （后续：1）"></a>JavaScript （后续：1）</h1><p>alert();警告框<br>prompt():输入框  返回输入的值<br>confirm():确认框  返回值：true/false<br>//相当于window.confirm();</p><h3 id="js自定义函数的语法"><a href="#js自定义函数的语法" class="headerlink" title="js自定义函数的语法"></a>js自定义函数的语法</h3><p>function 函数名(参数（形参）列表){</p><p>}</p><h3 id="系统函数"><a href="#系统函数" class="headerlink" title="系统函数"></a>系统函数</h3><ol><li>parseInt<br> 把字符串类型转换成number类型变量</li><li>parseFloat<br> 把字符串小数转换成number类型变量</li><li>isNaN()<br> 判断变量是否是 非数字</li><li>history.back(); 返回上一页</li><li>history.forward() 前往下一页</li><li>history.go();<ol><li>history.go(1) 前往下一页</li><li>history.go(-1) 返回上一页</li><li>history.go(2) 前往下两页</li><li>history.go(-2) 返回上两页</li></ol></li><li>loadtion.reload() 刷新当前页面</li><li>var date = new Date();获取当前系统时间<ol><li>date.getFullYear()  获取4位年份</li><li>date.getMinutes()+1; 月份</li><li>date.getDate();获取当前日</li><li>date.getHours();获取当前小时</li><li>date.getMinutes()获取分钟</li><li>date.getSeconds()获取秒</li><li>date.getMilliseconds()//毫秒</li></ol></li></ol><h3 id="常用的事件"><a href="#常用的事件" class="headerlink" title="常用的事件"></a>常用的事件</h3><ol><li>onclick() 单击事件</li><li>onkeydown() 键盘敲击事件</li><li>onmouseover() 鼠标移入元素</li><li>onmouseout() 鼠标移开元素</li><li>onload() 页面加载完成后执行的方法</li><li>onchange()  <strong>表单元素</strong>被改变内容</li></ol><h3 id="js中的定时器"><a href="#js中的定时器" class="headerlink" title="js中的定时器"></a>js中的定时器</h3><ul><li>setTimeout（）； 设置一次性的闹钟</li></ul><blockquote><p>如： var tm=setTImeout（“test（）”，3000）3秒后调用test函数   (这里返回的值是定时器的标识) </p></blockquote><ul><li>clearTimeout();      清除一次性的定时器</li></ul><blockquote><p>如：clearTimeout(tm);   (这里的tm是上面的变量，即是定时器的标识) </p></blockquote><ul><li>setInterval() ; 设置循环闹钟</li></ul><blockquote><p>如： var am=setInterval（“test（）”，3000）3秒后调用test函数  (这里返回的值是定时器的标识) </p></blockquote><ul><li>clearInterval()    清除循环闹钟</li></ul><blockquote><p>如：clearInterval(am);     (这里的am是上面的变量，即是定时器的标识) </p></blockquote><h3 id="js标签对象"><a href="#js标签对象" class="headerlink" title="js标签对象"></a>js标签对象</h3><ol><li>innerText获取或者设置标签里面的文本内容(不包括子标签)</li><li>innerHTML获取或设置标签里面的所有HTML文本(包括子标签及普通文本)</li></ol><blockquote><p>getElementById()    返回对拥有指定id的第一个对象的引用<br>getElementsByName()    返回带有指定名称的对象的集合<br>getElementsByTagName()    返回带有指定标签名的对象的集合<br>getElementsByClassName() 返回带有指定class名称的对象集合<br>write()    向文档写文本、HTML表达式或JavaScript代码</p></blockquote><h3 id="js变量的作用域："><a href="#js变量的作用域：" class="headerlink" title="js变量的作用域："></a>js变量的作用域：</h3><ol><li>局部变量<br> 在函数内部定义的变量，<br> 旨在函数内部有效，并且在定义的后面</li><li>全局变量<br> 不是在函数内部定义的变量<br> 在<code>&lt;script&gt;</code>中定义的变量，对整个页面都有效</li></ol><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>数组也是一种变量，这种变量代表多个值<br>数组对象是使用单独的变量名来存储一系列的值</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//声明数组</span><br><span class="line">var array = new Array();</span><br><span class="line">//给数组中的元素赋值，下标从0开始</span><br><span class="line">array[0] = 111;</span><br><span class="line">array[1] = 222;</span><br><span class="line">array[2] = 333;</span><br><span class="line">//array.length 返回数组的长度</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;JavaScript-（后续：1）&quot;&gt;&lt;a href=&quot;#JavaScript-（后续：1）&quot; class=&quot;headerlink&quot; title=&quot;JavaScript （后续：1）&quot;&gt;&lt;/a&gt;JavaScript （后续：1）&lt;/h1&gt;&lt;p&gt;alert();警告
+      
+    
+    </summary>
+    
+      <category term="jee学习之路" scheme="https://shuisuinian.coding.me/categories/jee%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+      <category term="js" scheme="https://shuisuinian.coding.me/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript</title>
