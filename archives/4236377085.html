@@ -119,17 +119,21 @@
 
 
 
-  <meta name="description" content="没什么期待才会偶遇惊喜">
-<meta name="keywords" content="wyf&#39;s blog , personal blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="wyf-Hexo">
-<meta property="og:url" content="https://shuisuinian.coding.me/archives/2019/page/2/index.html">
+  <meta name="description" content="字符串比较 如果是2个基本类型比较，是比较值是否相等 如果是2个引用类型比较，比较的是引用类型指向的内存地址  String s1=”hello”与String s2=new String(“hello”)的区别：* new的对象是在堆中存储，并且每new一次就单独申请一块新的内存 * 常量字符串在常量池(特殊的内存区域)">
+<meta name="keywords" content="javase,字符串">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字符串">
+<meta property="og:url" content="https://shuisuinian.coding.me/archives/4236377085.html">
 <meta property="og:site_name" content="wyf-Hexo">
-<meta property="og:description" content="没什么期待才会偶遇惊喜">
+<meta property="og:description" content="字符串比较 如果是2个基本类型比较，是比较值是否相等 如果是2个引用类型比较，比较的是引用类型指向的内存地址  String s1=”hello”与String s2=new String(“hello”)的区别：* new的对象是在堆中存储，并且每new一次就单独申请一块新的内存 * 常量字符串在常量池(特殊的内存区域)">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00f23744e8655027.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00f234505d239293.png">
+<meta property="og:updated_time" content="2019-06-12T12:38:32.772Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wyf-Hexo">
-<meta name="twitter:description" content="没什么期待才会偶遇惊喜">
+<meta name="twitter:title" content="字符串">
+<meta name="twitter:description" content="字符串比较 如果是2个基本类型比较，是比较值是否相等 如果是2个引用类型比较，比较的是引用类型指向的内存地址  String s1=”hello”与String s2=new String(“hello”)的区别：* new的对象是在堆中存储，并且每new一次就单独申请一块新的内存 * 常量字符串在常量池(特殊的内存区域)">
+<meta name="twitter:image" content="https://i.loli.net/2019/06/12/5d00f23744e8655027.png">
 
 
 
@@ -138,7 +142,7 @@
 
 
 
-  <link rel="canonical" href="https://shuisuinian.coding.me/archives/2019/page/2/">
+  <link rel="canonical" href="https://shuisuinian.coding.me/archives/4236377085.html">
 
 
 
@@ -148,7 +152,7 @@
   };
 </script>
 
-  <title>归档 | wyf-Hexo</title>
+  <title>字符串 | wyf-Hexo</title>
   
 
 
@@ -216,7 +220,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/shuisuinian" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -414,181 +418,362 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://shuisuinian.coding.me/archives/4236377085.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ShuiSui">
+      <meta itemprop="description" content="没什么期待才会偶遇惊喜">
+      <meta itemprop="image" content="/images/avatar1.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wyf-Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">字符串
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-12 20:34:11 / 修改时间：20:38:32" itemprop="dateCreated datePublished" datetime="2019-06-12T20:34:11+08:00">2019-06-12</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jee学习之路/" itemprop="url" rel="index"><span itemprop="name">jee学习之路</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/archives/4236377085.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/archives/4236377085.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/archives/4236377085.html" class="leancloud_visitors" data-flag-title="字符串">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      <span class="archive-page-counter">
+      
+
+      
+        <h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><h4 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h4><ul>
+<li>如果是2个基本类型比较，是比较值是否相等</li>
+<li>如果是2个引用类型比较，比较的是引用类型指向的内存地址</li>
+</ul>
+<h5 id="String-s1-”hello”与String-s2-new-String-“hello”-的区别："><a href="#String-s1-”hello”与String-s2-new-String-“hello”-的区别：" class="headerlink" title="String s1=”hello”与String s2=new String(“hello”)的区别："></a>String s1=”hello”与String s2=new String(“hello”)的区别：</h5><pre><code>* new的对象是在堆中存储，并且每new一次就单独申请一块新的内存
+* 常量字符串在常量池(特殊的内存区域)
+</code></pre><a id="more"></a>
+<blockquote>
+<p>String类在内存中管理一个字符串常量池（常量池的一部分），池中所有相同的字符串常量被合并，只占用一个空间。<br>String s1=”hello”，先看池中有没有hello，没有就创建一个hello字符串对象。即采用此方法创建0或者1个对象。<br>String s2=new String(“hello”),这里先在池中创建一个hello对象，同s1，然后new String()时，将hello对象复制到堆heap中，s2指向堆中的hello。采用此种方法时创建1或2个对象(当池中有hello时，创建一个对象)。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2019/06/12/5d00f23744e8655027.png" alt><br><img src="https://i.loli.net/2019/06/12/5d00f234505d239293.png" alt></p>
+<blockquote>
+<p>例子</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class StringExp1 &#123;</span><br><span class="line">     public static void main(String[] args) &#123;</span><br><span class="line">          String s1 = &quot;hello java&quot;;</span><br><span class="line">          String s2 = new String();</span><br><span class="line">          s2 = &quot;hello java&quot;;</span><br><span class="line">          String s3 = new String(&quot;hello java&quot;);</span><br><span class="line">          String s4 = new String(&quot;hello java&quot;);</span><br><span class="line">          String s5 = &quot;hello java&quot;;</span><br><span class="line">          System.out.println(s1==s2);</span><br><span class="line">          System.out.println(s1==s3);</span><br><span class="line">          System.out.println(s1==s4);</span><br><span class="line">          System.out.println(s1==s5);</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>结果</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">true</span><br><span class="line">false</span><br><span class="line">false</span><br><span class="line">true</span><br></pre></td></tr></table></figure>
+<h5 id="比较字符串内容是否相等"><a href="#比较字符串内容是否相等" class="headerlink" title="比较字符串内容是否相等"></a>比较字符串内容是否相等</h5><ul>
+<li>equals() 区分大小写</li>
+<li>equalsIgnoreCase()  不区分大小写</li>
+<li>==是比较两个字符的首地址（两个对象是否引用同一实例）</li>
+</ul>
+<blockquote>
+<p>例子</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s1 = &quot;123qwe&quot;;</span><br><span class="line">s2 = &quot;123QWE&quot;;</span><br><span class="line">System.out.println(s1.equals(s2));</span><br><span class="line">System.out.println(s1.equalsIgnoreCase(s2));</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>结果</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">false</span><br><span class="line">true</span><br></pre></td></tr></table></figure>
+<h5 id="字符串常用方法"><a href="#字符串常用方法" class="headerlink" title="字符串常用方法"></a>字符串常用方法</h5><h6 id="查找字符或子字符串-返回索引-未找到返回-1"><a href="#查找字符或子字符串-返回索引-未找到返回-1" class="headerlink" title="查找字符或子字符串, 返回索引,未找到返回-1"></a>查找字符或子字符串, 返回索引,未找到返回-1</h6><pre><code>* indexOf(); 从左边开始查找第一个字符或子字符串
+* lastIndexOf()查找最后一个字符或子字符串
+</code></pre><blockquote>
+<p>例</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String str = &quot;abcdefgabcabc&quot;;</span><br><span class="line">int i = str.indexOf(&apos;a&apos;);//查找字符</span><br><span class="line">System.out.println(i);</span><br><span class="line">i = str.indexOf(&quot;bca&quot;);//查找子字符串</span><br><span class="line">System.out.println(i);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>结果</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">8</span><br></pre></td></tr></table></figure>
+<h6 id="字符串内容操作要注意的地方"><a href="#字符串内容操作要注意的地方" class="headerlink" title="字符串内容操作要注意的地方"></a>字符串内容操作要注意的地方</h6><blockquote>
+<p>注意：对字符串内容操作的函数不会作用与字符串本身，而是作为返回值返回。<br>原因：String 类是被final修饰的 ，final修饰的对象，一旦赋值，则内存地址不能在改变,<br>因为String对象是不能改变的，当需要更改一个字符串时，就必须将他复制到一个StringBuffered中，后者使用下列方法，在更改后会构造一个新的字符串副本。<br>例</p>
+</blockquote>
+<h6 id="截取字符串"><a href="#截取字符串" class="headerlink" title="截取字符串"></a>截取字符串</h6><ul>
+<li>substring(10) 从第10个开始,截取到末尾</li>
+<li>substring(5,10) 从第5个开始,截取到第10个</li>
+<li>trim() 去掉两端空格</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">String str = &quot;   abcdefgabcabc   &quot;;</span><br><span class="line">System.out.println(str);</span><br><span class="line"></span><br><span class="line">String s = str.substring(10);</span><br><span class="line">System.out.println(s);</span><br><span class="line"></span><br><span class="line">s = str.substring(5,10);</span><br><span class="line">System.out.println(s);</span><br><span class="line"></span><br><span class="line">String tString = str.trim();</span><br><span class="line">System.out.println(tString);</span><br><span class="line"></span><br><span class="line">System.out.println(str);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>结果</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   abcdefgabcabc   //str存在空格</span><br><span class="line">abcabc                 //str.substring(10);</span><br><span class="line">cdefg                   //str.substring(5,10);</span><br><span class="line">abcdefgabcabc       //str.trim();</span><br><span class="line">   abcdefgabcabc    //str依然存在空格  str本身未被改变</span><br></pre></td></tr></table></figure>
+<h6 id="分割字符串"><a href="#分割字符串" class="headerlink" title="分割字符串"></a>分割字符串</h6><ul>
+<li>str.split(a); 根据a来分割字符串str</li>
+</ul>
+<blockquote>
+<p>例</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">String question = &quot;1+1=?#A:1&amp;B:2&amp;C:3&amp;D:4#B&quot;;</span><br><span class="line"></span><br><span class="line">String[] ques = question.split(&quot;#&quot;);</span><br><span class="line"></span><br><span class="line">System.out.println(&quot;题目描述:&quot;+ques[0]);</span><br><span class="line"></span><br><span class="line">System.out.println(&quot;题目选项:&quot;);</span><br><span class="line"></span><br><span class="line">String[] ops = ques[1].split(&quot;&amp;&quot;);</span><br><span class="line"></span><br><span class="line">for (String o : ops) &#123;</span><br><span class="line"></span><br><span class="line">    System.out.println(o);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">System.out.println(&quot;答案&quot;+ques[2]);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>结果</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">题目描述:1+1=?</span><br><span class="line">题目选项:</span><br><span class="line">A:1</span><br><span class="line">B:2</span><br><span class="line">C:3</span><br><span class="line">D:4</span><br><span class="line">答案A</span><br></pre></td></tr></table></figure>
+<ul>
+<li>其他<ul>
+<li>charAt()</li>
+<li>codePointAt()</li>
+<li>replace()</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>例</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">String str = &quot;abcdefgabcabc&quot;;</span><br><span class="line">System.out.println(str);</span><br><span class="line"></span><br><span class="line">//返回指定位置的字符</span><br><span class="line">char ch = str.charAt(3);</span><br><span class="line">System.out.println(ch);</span><br><span class="line"></span><br><span class="line">//返回指定位置字符的&lt;u&gt;unicode&lt;/u&gt;码</span><br><span class="line">int i = str.codePointAt(3);</span><br><span class="line">System.out.println(i);</span><br><span class="line"></span><br><span class="line">//把str中ab替换成sb</span><br><span class="line">String str2 = str.replace(&quot;ab&quot;, &quot;sb&quot;);</span><br><span class="line">System.out.println(str2);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>结果</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">abcdefgabcabc</span><br><span class="line">d</span><br><span class="line">100</span><br><span class="line">sbcdefgsbcsbc</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+
+    
+    
+    
+    
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="ShuiSui 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javase/" rel="tag"><i class="fa fa-tag"></i> javase</a>
+          
+            <a href="/tags/字符串/" rel="tag"><i class="fa fa-tag"></i> 字符串</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
         
+
         
+
         
           
-        
-        嗯..! 目前共计 13 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2019">2019</h2>
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+            
           </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/archives/1243066710.html" itemprop="url">
-            
-              <span itemprop="name">Hello World</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-16T12:59:44+08:00" content="2019-03-16">
-          03-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/archives/3442686983.html" itemprop="url">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span itemprop="name">单例设计模式</span>
+              <a href="/archives/2348218246.html" rel="next" title="面向对象(OOP)">
+                <i class="fa fa-chevron-left"></i> 面向对象(OOP)
+              </a>
             
-          </a>
-        
-      </h3>
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-10T00:12:11+08:00" content="2019-03-10">
-          03-10
-        </time>
-      </div>
+          <span class="post-nav-divider"></span>
 
-    </header>
-  </article>
-
-
-
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/archives/469202525.html" itemprop="url">
-            
-              <span itemprop="name">hexo创建</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-09T09:01:00+08:00" content="2019-03-09">
-          03-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-    </div>
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2019/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span>
-  </nav>
+  </article>
 
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -608,8 +793,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -747,6 +941,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">1.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#比较"><span class="nav-number">1.1.</span> <span class="nav-text">比较</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#String-s1-”hello”与String-s2-new-String-“hello”-的区别："><span class="nav-number">1.1.1.</span> <span class="nav-text">String s1=”hello”与String s2=new String(“hello”)的区别：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#比较字符串内容是否相等"><span class="nav-number">1.1.2.</span> <span class="nav-text">比较字符串内容是否相等</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#字符串常用方法"><span class="nav-number">1.1.3.</span> <span class="nav-text">字符串常用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#查找字符或子字符串-返回索引-未找到返回-1"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">查找字符或子字符串, 返回索引,未找到返回-1</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#字符串内容操作要注意的地方"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">字符串内容操作要注意的地方</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#截取字符串"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">截取字符串</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#分割字符串"><span class="nav-number">1.1.3.4.</span> <span class="nav-text">分割字符串</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -906,6 +1117,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -951,6 +1166,8 @@
 
 
 
+
+  
 
 
   
@@ -1282,38 +1499,37 @@
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
+                .done(function() {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function() {
+                  console.log('Failed to create');
+                });
+            
           }
         })
         .fail(function ({ responseJSON }) {
@@ -1338,9 +1554,7 @@
             });
           };
           
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
+            addCount(Counter);
           
         });
     });
