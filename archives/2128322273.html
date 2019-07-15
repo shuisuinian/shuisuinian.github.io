@@ -120,14 +120,14 @@
 
 
   <meta name="description" content="java集合框架 从物理角度只有两种数据结构  连续存储 链式存储">
-<meta name="keywords" content="集合,数据结构">
+<meta name="keywords" content="javase,数据结构,集合框架">
 <meta property="og:type" content="article">
 <meta property="og:title" content="集合框架">
 <meta property="og:url" content="https://shuisuinian.coding.me/archives/2128322273.html">
 <meta property="og:site_name" content="wyf-Hexo">
 <meta property="og:description" content="java集合框架 从物理角度只有两种数据结构  连续存储 链式存储">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-29T03:04:06.680Z">
+<meta property="og:updated_time" content="2019-07-15T06:22:49.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="集合框架">
 <meta name="twitter:description" content="java集合框架 从物理角度只有两种数据结构  连续存储 链式存储">
@@ -478,12 +478,24 @@
                 
               
 
-              <time title="创建时间：2019-06-29 10:56:32 / 修改时间：11:04:06" itemprop="dateCreated datePublished" datetime="2019-06-29T10:56:32+08:00">2019-06-29</time>
+              <time title="创建时间：2019-06-29 10:56:32" itemprop="dateCreated datePublished" datetime="2019-06-29T10:56:32+08:00">2019-06-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-15 14:22:49" itemprop="dateModified" datetime="2019-07-15T14:22:49+08:00">2019-07-15</time>
               
             
           </span>
@@ -500,7 +512,21 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jee学习之路/" itemprop="url" rel="index"><span itemprop="name">jee学习之路</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/个人笔记/" itemprop="url" rel="index"><span itemprop="name">个人笔记</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/个人笔记/jee学习之路/" itemprop="url" rel="index"><span itemprop="name">jee学习之路</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/个人笔记/jee学习之路/javase/" itemprop="url" rel="index"><span itemprop="name">javase</span></a></span>
 
                 
                 
@@ -608,7 +634,8 @@
 <ol>
 <li>如果在初始化ArrayList的时候没有指定初始化长度的话，默认的长度为10</li>
 <li>ArrayList在增加新元素的时候如果超过了原始的容量的话，ArrayList扩容ensureCapacity的方案为<code>原始容量*3/2</code></li>
-<li>ArrayList是线程不安全的，在多线程的情况下不要使用<blockquote>
+<li><p>ArrayList是线程不安全的，在多线程的情况下不要使用</p>
+<blockquote>
 <p>如果一定在多线程使用List的，您可以使用Vector，因为Vector和ArrayList基本一致，区别在于Vector中的绝大部分方法都          使用了同步关键字修饰，这样在多线程的情况下不会出现并发错误哦，还有就是它们的扩容方案不同，ArrayList是通过<code>原始容量*3/2</code>,而Vector是允许设置默认的增长长度，Vector的默认扩容方式为原来的2倍。         切记Vector是ArrayList的多线程的一个替代品</p>
 </blockquote>
 </li>
@@ -706,7 +733,8 @@
 </blockquote>
 <ul>
 <li>新建一个HashMap时,默认的话会初始化一个大小为16，负载因子为0.75的空的HashMap</li>
-<li>HashMap中还存在一个内部类Entry，用于链表的存储<blockquote>
+<li><p>HashMap中还存在一个内部类Entry，用于链表的存储</p>
+<blockquote>
 <p>Entry是一个结点，它持有下一个元素的引用，这样就构成了一个链表</p>
 </blockquote>
 </li>
@@ -773,9 +801,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/集合/" rel="tag"><i class="fa fa-tag"></i> 集合</a>
+            <a href="/tags/javase/" rel="tag"><i class="fa fa-tag"></i> javase</a>
           
             <a href="/tags/数据结构/" rel="tag"><i class="fa fa-tag"></i> 数据结构</a>
+          
+            <a href="/tags/集合框架/" rel="tag"><i class="fa fa-tag"></i> 集合框架</a>
           
         </div>
       
@@ -931,7 +961,25 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
